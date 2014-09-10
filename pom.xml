@@ -12,8 +12,8 @@
         <maven-release-plugin.version>2.5</maven-release-plugin.version>
     </properties>
     <scm>
-        <connection>scm:git:git@git.basistech.net:textanalytics/basis-parent-pom.git</connection>
-        <developerConnection>scm:git:git@git.basistech.net:textanalytics/basis-parent-pom.git</developerConnection>
+        <connection>scm:git:git@github.com:bimargulies/pom-file-name-tc.git</connection>
+        <developerConnection>scm:git:git@github.com:bimargulies/pom-file-name-tc.git</developerConnection>
     </scm>
     <pluginRepositories>
         <pluginRepository>
