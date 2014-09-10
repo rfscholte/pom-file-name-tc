@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.basistech</groupId>
+    <artifactId>pom-file-name-tc</artifactId>
+    <version>0.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <prerequisites>
+        <maven>3.0.4</maven>
+    </prerequisites>
+    <properties>
+        <maven-release-plugin.version>2.5</maven-release-plugin.version>
+    </properties>
+    <scm>
+        <connection>scm:git:git@git.basistech.net:textanalytics/basis-parent-pom.git</connection>
+        <developerConnection>scm:git:git@git.basistech.net:textanalytics/basis-parent-pom.git</developerConnection>
+    </scm>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>basistech.repo</id>
+            <url>http://maven.basistech.net/nexus/content/repositories/releases/</url>
+        </pluginRepository>
+    </pluginRepositories>
+    <distributionManagement>
+        <repository>
+            <id>basistech.repo</id>
+            <name>Basis Local Repository</name>
+            <url>http://maven.basistech.net/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>basistech.snapshot.repo</id>
+            <name>Basistech Local Snapshot Repository</name>
+            <url>http://maven.basistech.net/nexus/content/repositories/snapshots/</url>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
+    <build>
+        <defaultGoal>install</defaultGoal>
+        <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>${maven-release-plugin.version}</version>
+                    <configuration>
+                        <useReleaseProfile>true</useReleaseProfile>
+                        <releaseProfiles>release</releaseProfiles>
+                        <remoteTagging>true</remoteTagging>
+                        <autoVersionSubmodules>true</autoVersionSubmodules>
+                        <!-- turn off the site deploy. There's a maven bug that makes it break -->
+                        <goals>deploy</goals>
+                        <pushChanges>true</pushChanges>
+                        <localCheckout>true</localCheckout>
+                    </configuration>
+                </plugin>
+            </plugins>
+    </build>
+</project>
