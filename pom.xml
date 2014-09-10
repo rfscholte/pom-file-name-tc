@@ -16,22 +16,16 @@
         <developerConnection>scm:git:git@github.com:bimargulies/pom-file-name-tc.git</developerConnection>
       <tag>HEAD</tag>
   </scm>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>basistech.repo</id>
-            <url>http://maven.basistech.net/nexus/content/repositories/releases/</url>
-        </pluginRepository>
-    </pluginRepositories>
     <distributionManagement>
         <repository>
-            <id>basistech.repo</id>
-            <name>Basis Local Repository</name>
-            <url>http://maven.basistech.net/nexus/content/repositories/releases/</url>
+          <id>local jars</id>
+          <name>local jars</name>
+          <url>file:///tmp/test-repository</url>
         </repository>
         <snapshotRepository>
-            <id>basistech.snapshot.repo</id>
-            <name>Basistech Local Snapshot Repository</name>
-            <url>http://maven.basistech.net/nexus/content/repositories/snapshots/</url>
+          <id>local jars</id>
+          <name>local jars</name>
+          <url>file:///tmp/test-repository</url>
             <uniqueVersion>false</uniqueVersion>
         </snapshotRepository>
     </distributionManagement>
