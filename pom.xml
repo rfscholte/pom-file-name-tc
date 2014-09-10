@@ -14,24 +14,25 @@
     <scm>
         <connection>scm:git:git@github.com:bimargulies/pom-file-name-tc.git</connection>
         <developerConnection>scm:git:git@github.com:bimargulies/pom-file-name-tc.git</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
     <distributionManagement>
         <repository>
-          <id>local jars</id>
-          <name>local jars</name>
-          <url>file:///tmp/test-repository</url>
+            <id>local jars</id>
+            <name>local jars</name>
+            <url>file:///tmp/test-repository</url>
         </repository>
         <snapshotRepository>
-          <id>local jars</id>
-          <name>local jars</name>
-          <url>file:///tmp/test-repository</url>
+            <id>local jars</id>
+            <name>local jars</name>
+            <url>file:///tmp/test-repository</url>
             <uniqueVersion>false</uniqueVersion>
         </snapshotRepository>
     </distributionManagement>
     <build>
         <defaultGoal>install</defaultGoal>
-        <plugins>
+        <pluginManagement>
+            <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
@@ -48,5 +49,6 @@
                     </configuration>
                 </plugin>
             </plugins>
+        </pluginManagement>
     </build>
 </project>
