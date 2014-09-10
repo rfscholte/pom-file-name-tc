@@ -9,7 +9,7 @@
         <maven>3.0.4</maven>
     </prerequisites>
     <properties>
-        <maven-release-plugin.version>2.5</maven-release-plugin.version>
+        <maven-release-plugin.version>2.2.1</maven-release-plugin.version>
     </properties>
     <scm>
         <connection>scm:git:git@github.com:bimargulies/pom-file-name-tc.git</connection>
