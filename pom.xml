@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.basistech</groupId>
     <artifactId>pom-file-name-tc</artifactId>
-    <version>0.0.4</version>
+    <version>0.0.5-SNAPSHOT</version>
     <packaging>pom</packaging>
     <prerequisites>
         <maven>3.0.4</maven>
@@ -14,7 +14,7 @@
     <scm>
         <connection>scm:git:git@github.com:bimargulies/pom-file-name-tc.git</connection>
         <developerConnection>scm:git:git@github.com:bimargulies/pom-file-name-tc.git</developerConnection>
-        <tag>pom-file-name-tc-0.0.4</tag>
+        <tag>HEAD</tag>
     </scm>
     <distributionManagement>
         <repository>
