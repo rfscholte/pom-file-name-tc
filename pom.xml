@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.basistech</groupId>
     <artifactId>pom-file-name-tc</artifactId>
-    <version>0.0.5-SNAPSHOT</version>
+    <version>0.0.5</version>
     <packaging>pom</packaging>
     <prerequisites>
         <maven>3.0.4</maven>
@@ -13,7 +13,7 @@
     </properties>
     <scm>
         <developerConnection>scm:git:https://github.com:rfscholte/pom-file-name-tc.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>pom-file-name-tc-0.0.5</tag>
     </scm>
     <distributionManagement>
         <repository>
