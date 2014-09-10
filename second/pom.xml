@@ -24,6 +24,7 @@
                     <version>${maven-release-plugin.version}</version>
                     <configuration>
                       <pomFileName>../second/pom.xml</pomFileName>
+                      <commitByProject>true</commitByProject>
                     </configuration>
                 </plugin>
             </plugins>
