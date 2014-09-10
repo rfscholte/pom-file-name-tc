@@ -12,7 +12,7 @@
         <maven-release-plugin.version>2.5</maven-release-plugin.version>
     </properties>
     <scm>
-        <developerConnection>scm:git:https://github.com:rfscholte/pom-file-name-tc.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/rfscholte/pom-file-name-tc.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
     <distributionManagement>
